@@ -1,7 +1,7 @@
 csv-to-hash-xenode
 ==================
 
-**CSV-to-Hash Xenode** expects from its input message data a string containing comma separated values with row and column delimiters, parses the string and converts the string into a hash. The Xenode then passes the hash to its children. The row and column delimiters can be pre-defined by the user in the Configuration File.
+**CSV-to-Hash Xenode** expects from its input message data a string containing comma separated values with row and column delimiters, parses the string and converts the string into a hash. The Xenode then passes an array of hashes to its children. The row and column delimiters can be pre-defined by the user in the Configuration File.
 
 ###Configuration File Options:###
 * loop_delay: defines number of seconds the Xenode waits before running the Xenode process. Expects a float. 
@@ -21,4 +21,4 @@ csv-to-hash-xenode
 * msg.data: "From_User,Tweet_Content\ncmscrawler,http://t.co/8RxECaPlvD: Change from WordPress to Drupal. The site is hosted in The United States http://t.co/8RxECaPlvD #cms"
 
 ###Example Output:###
-* msg.data:  {"From_User"=>"cmscrawler", "Tweet_Content"=>"http://t.co/8RxECaPlvD: Change from WordPress to Drupal. The site is hosted in The United States http://t.co/8RxECaPlvD #cms"}
+* msg.data:  [{"From_User"=>"cmscrawler", "Tweet_Content"=>"http://t.co/8RxECaPlvD: Change from WordPress to Drupal. The site is hosted in The United States http://t.co/8RxECaPlvD #cms"}]
