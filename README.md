@@ -1,6 +1,8 @@
 CSV-to-Hash Xenode
 ==================
 
+Note: you will need the Xenograte Community Toolkit (XCT) to run this Xenode. Refer to the XCT repo [https://github.com/Nodally/xenograte-xct](https://github.com/Nodally/xenograte-xct) for more information.
+
 **CSV-to-Hash Xenode** expects from its input message data a string containing comma separated values with row and column delimiters, parses the string and converts the string into a hash. The Xenode then passes an array of hashes to its children. The row and column delimiters can be pre-defined by the user in the Configuration File.
 
 ###Configuration File Options:###
